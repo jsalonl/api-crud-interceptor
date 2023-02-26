@@ -58,11 +58,18 @@ API CRUD example using DDD structure, unit test, custom exceptions, rest control
 
 ### Swagger
 
-![Swagger]()
+![Swagger](https://raw.githubusercontent.com/jsalonl/api-crud-interceptor/main/screenshots/ss1.png)
+
+![Swagger](https://raw.githubusercontent.com/jsalonl/api-crud-interceptor/main/screenshots/ss2.png)
+
+### LOG with custom interceptor is enabled
+
+![Swagger](https://raw.githubusercontent.com/jsalonl/api-crud-interceptor/main/screenshots/ss3.png)
+
 
 ## TODO
 
-Make archetype in maven to facilitate implementation
+- Make archetype in maven to facilitate implementation
 
 ## Do you want to support me?
 <br>
