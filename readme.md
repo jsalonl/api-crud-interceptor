@@ -54,6 +54,12 @@ API CRUD example using DDD structure, unit test, custom exceptions, rest control
 7. The endpoint is (http://localhost:8010/api-crud/v1/)[http://localhost:8010/api-crud/v1/]
 8. Documentation of API is in (http://localhost:8010/api-crud/v1/swagger-ui.html)[http://localhost:8010/api-crud/swagger-ui.html]
 
+## Screenshots
+
+### Swagger
+
+![Swagger]()
+
 ## TODO
 
 Make archetype in maven to facilitate implementation
