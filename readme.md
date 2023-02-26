@@ -20,12 +20,12 @@ API CRUD example using DDD structure, unit test, custom exceptions, rest control
      ├──  dto               # DTO
      ├──  service           # Logic layer
           ├──  impl         # Implementation of service
-├──  exception				# Handle custom exception
-		 ├──  controller	# Rest Controller Advice
-		 ├──  dto			# Custom DTO
+├──  exception		    # Handle custom exception
+     ├──  controller	    # Rest Controller Advice
+     ├──  dto		    # Custom DTO
 ├──  interceptor            # Custom Interceptor
-     ├── dto         		# Logger DTO for custom interceptor
-     ├── service         	# Service to log trace for custom interceptor
+     ├── dto         	    # Logger DTO for custom interceptor
+     ├── service            # Service to log trace for custom interceptor
 ├──  persistence            # Data access
      ├──  entity            # Entities used in app
      ├──  mapper            # Mapper entities to DTO
@@ -34,10 +34,10 @@ API CRUD example using DDD structure, unit test, custom exceptions, rest control
 ├──  util                   # Constants, formatters, etc
 ├──  web                    # REST Controller
 ├── dto                     # DTO example (Request and Response)
-├── interceptor         	# Interceptor config
-    ├── dto         		# Logger DTO
-    ├── service         	# Service to log trace
-├── web						# Rest Controller
+├── interceptor             # Interceptor config
+    ├── dto         	    # Logger DTO
+    ├── service             # Service to log trace
+├── web			    # Rest Controller
 ├── postman                 # Folder to save  collection post
 ```
 ## How to use
