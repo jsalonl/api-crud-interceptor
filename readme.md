@@ -10,7 +10,25 @@
 
 ## Description
 
-API CRUD example using DDD structure, unit test, custom exceptions, rest controller advice, stream api, api docs with swagger and custom interceptor to obtain a detailed log of the application's requests and responses.
+API CRUD example using:
+- DDD structure
+- Custom exceptions
+- Rest controller advice
+- Api docs with swagger
+- Custom interceptor to obtain a detailed log of the application's requests and responses. 
+- Unit test (JUnit5 + Mockito)
+- Sonarqube analysis
+- Postman collection
+
+## Requirements
+
+- Java 11
+- Maven 3.6.3
+- Postgresql 13.2 (You can use another database, but you must change the dependencies in pom.xml)
+- Postman (Optional)
+- Sonarqube (Optional)
+- Intellij Idea (Optional)
+- Lombok (Recommended)
 
 ## Structure of project
 
@@ -64,13 +82,16 @@ API CRUD example using DDD structure, unit test, custom exceptions, rest control
 
 ### LOG with custom interceptor is enabled
 
-![Swagger](https://raw.githubusercontent.com/jsalonl/api-crud-interceptor/main/screenshots/ss3.png)
+![Log](https://raw.githubusercontent.com/jsalonl/api-crud-interceptor/main/screenshots/ss3.png)
 
+### Sonarqube analysis
+
+![Sonar](https://raw.githubusercontent.com/jsalonl/api-crud-interceptor/main/screenshots/ss4.png)
 
 ## TODO
 
 - Make archetype in maven to facilitate implementation
 
 ## Do you want to support me?
-<br>
+
 <a href="https://www.buymeacoffee.com/JoanSalomon" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-red.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>

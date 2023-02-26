@@ -8,8 +8,7 @@ import org.springframework.test.util.ReflectionTestUtils;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 
 import static org.mockito.ArgumentMatchers.any;
-import static org.mockito.Mockito.mock;
-import static org.mockito.Mockito.verify;
+import static org.mockito.Mockito.*;
 
 @ExtendWith(MockitoExtension.class)
 class WebConfigurationTest {
@@ -24,5 +23,14 @@ class WebConfigurationTest {
         ReflectionTestUtils.setField(webConfiguration, "interceptorEnabled", true);
         webConfiguration.addInterceptors(interceptorRegistry);
         verify(interceptorRegistry).addInterceptor(any(GeneralInterceptor.class));
+    }
+
+    @Test
+    void testAddInterceptorsDisabled() {
+        InterceptorRegistry interceptorRegistry = mock(InterceptorRegistry.class);
+        ReflectionTestUtils.setField(webConfiguration, "generalInterceptor", new GeneralInterceptor());
+        ReflectionTestUtils.setField(webConfiguration, "interceptorEnabled", false);
+        webConfiguration.addInterceptors(interceptorRegistry);
+        verifyNoInteractions(interceptorRegistry);
     }
 }

@@ -8,6 +8,7 @@ spring:
     name: api-crud-postgresql-interceptor
     interceptor:
       enabled: ${interceptor-enabled:true}
+    cors: "*"
   datasource:
     driver-class-name: ${DATABASE_DRIVER:org.postgresql.Driver}
     url: ${DATABASE_URL:jdbc:postgresql://localhost:5432/postgres}

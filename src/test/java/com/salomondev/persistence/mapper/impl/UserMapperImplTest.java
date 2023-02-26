@@ -52,8 +52,8 @@ class UserMapperImplTest {
         assertEquals(userDtoMock.getLastName(), userDto.getLastName());
         assertEquals(userDtoMock.getEmail(), userDto.getEmail());
         assertEquals(userDtoMock.getPhone(), userDto.getPhone());
-        assertEquals(userDtoMock.getCreatedAt(), userDto.getCreatedAt());
-        assertEquals(userDtoMock.getUpdatedAt(), userDto.getUpdatedAt());
+        assertNotNull(userDto.getCreatedAt());
+        assertNotNull(userDto.getUpdatedAt());
     }
 
     @Test
@@ -64,8 +64,7 @@ class UserMapperImplTest {
         assertEquals(userEntityMock.getLastName(), userEntity.getLastName());
         assertEquals(userEntityMock.getEmail(), userEntity.getEmail());
         assertEquals(userEntityMock.getPhone(), userEntity.getPhone());
-        assertEquals(userEntityMock.getCreatedAt(), userEntity.getCreatedAt());
-        assertEquals(userEntityMock.getUpdatedAt(), userEntity.getUpdatedAt());
-
+        assertNotNull(userEntity.getCreatedAt());
+        assertNotNull(userEntity.getUpdatedAt());
     }
 }

@@ -8,12 +8,12 @@
         <version>2.7.7</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>com.example</groupId>
-    <artifactId>interceptor</artifactId>
+    <groupId>com.salomondev</groupId>
+    <artifactId>api-crud-postgresql-interceptor</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
-    <name>interceptor</name>
-    <description>interceptor</description>
+    <name>api-crud-postgresql-interceptor</name>
+    <description>api-crud-postgresql-interceptor</description>
     <properties>
         <java.version>11</java.version>
     </properties>
@@ -69,7 +69,35 @@
                     </excludes>
                 </configuration>
             </plugin>
+            <plugin>
+                <groupId>org.sonarsource.scanner.maven</groupId>
+                <artifactId>sonar-maven-plugin</artifactId>
+                <version>3.7.0.1746</version>
+            </plugin>
+            <plugin>
+                <groupId>org.jacoco</groupId>
+                <artifactId>jacoco-maven-plugin</artifactId>
+                <version>0.8.7</version>
+                <executions>
+                    <execution>
+                        <id>prepare-agent</id>
+                        <goals>
+                            <goal>prepare-agent</goal>
+                        </goals>
+                    </execution>
+                    <execution>
+                        <id>report</id>
+                        <goals>
+                            <goal>report</goal>
+                        </goals>
+                        <configuration>
+                            <formats>
+                                <format>XML</format>
+                            </formats>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
         </plugins>
     </build>
-
 </project>

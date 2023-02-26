@@ -76,6 +76,13 @@ class TraceServiceImplTest {
     }
 
     @Test
+    void registerInitTime_WhenSizeParametersInIsZero() {
+        when(request.getParameterMap()).thenReturn(new HashMap<>());
+        traceService.registerInitTime(request);
+        assertNotNull(loggerDto.getParametersIn());
+    }
+
+    @Test
     void registerTrace() throws JsonProcessingException {
         when(request.getParameterMap()).thenReturn(map);
         traceService.registerInitTime(request);

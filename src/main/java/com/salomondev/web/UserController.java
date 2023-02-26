@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@CrossOrigin(value = "*")
+@CrossOrigin(value = "${spring.application.cors}")
 @RequestMapping(value = "/user")
 public class UserController {
 
