@@ -1,0 +1,5 @@
+# Ignore for Google App Engine
+.mvn
+target
+mvnw
+mvnw.cmd

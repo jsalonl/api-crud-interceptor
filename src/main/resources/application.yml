@@ -1,0 +1,25 @@
+server:
+  port: ${PORT:8010}
+  servlet:
+    context-path: /api-crud/v1
+
+spring:
+  application:
+    name: api-crud-postgresql-interceptor
+    interceptor:
+      enabled: ${interceptor-enabled:true}
+  datasource:
+    driver-class-name: ${DATABASE_DRIVER:org.postgresql.Driver}
+    url: ${DATABASE_URL:jdbc:postgresql://localhost:5432/postgres}
+    username: ${DATABASE_USERNAME:postgres}
+    password: ${DATABASE_PASSWORD:postgres}
+    hikari:
+      connection-timeout: 30000
+      max-lifetime: 30000
+  jpa:
+    open-in-view: false
+    show-sql: false
+springdoc:
+  api-docs:
+    enabled: true
+    path: /api-docs

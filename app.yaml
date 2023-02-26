@@ -1,0 +1,3 @@
+# Config file for the App Engine Java runtime (https://cloud.google.com/appengine/docs/standard/java/)
+runtime: java11
+instance_class: F2
